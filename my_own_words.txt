@@ -1,0 +1,22 @@
+What assumptions will you make about this problem since you cannot ask clarifying questions?
+
+I will assume that the given parameters are accurate:
+* The payload will only contain unique integer numbers
+* The payload will contain no other data types
+* The payload will not contain duplicates
+
+This challenge is looking for the most efficient way to search a list for (x + y = n).
+Avoiding O(n^2) iteration is desired. My goal is to make a single iteration pass until
+the desired number combination is found.
+
+I'm going to use a dictionary and list to solve this challenge. The pro is that a single
+iteration is required, the .get() search is fast, and the iteration will break as soon as
+a desired result is found. The cons are that with a large data set I would potentially be
+creating an additional large data set.
+
+Find Complement of Target - Number. If Payload contains Complement, break iteration. Return
+the value of Pairs.
+
+I believe the BigO complexity of my solution is O(n). It's a single iteration, but it requires
+creating a temporary data structure to help solve the problem.
+
